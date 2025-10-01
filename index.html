@@ -10,103 +10,64 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <main>
       <!-- BANNER SECTION -->
       <section>
         <div class="container hero">
-          <div class="">
-            <!-- Carosel -->
-            <div id="carouselExampleIndicators" class="carousel slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item">
-                  <!-- card-1 -->
-                  <div class="hero-card">
-                    <div class="card-caption col-6">
-                      <h5>Fashion Apparel</h5>
-                      <h3>Collections Exclusive To The Z Generation</h3>
-                      <button type="button">Shop Now</button>
-                    </div>
-                    <div class="card-figure col-6">
-                      <img src="./assets/image/card_image_1.png" alt="image" />
-                    </div>
+          <!-- Swiper -->
+          <div class="swiper mySwiperHero">
+            <div class="swiper-wrapper">
+              <!-- Card : 1 -->
+              <div class="swiper-slide-hero">
+                <div class="hero-card">
+                  <div class="card-caption col-6">
+                    <h5>Fashion Apparel</h5>
+                    <h3>Collections Exclusive To The Z Generation</h3>
+                    <button type="button">Shop Now</button>
                   </div>
-                </div>
-                <div class="carousel-item active">
-                  <!-- card-1 -->
-                  <div class="hero-card">
-                    <div class="card-caption col-6">
-                      <h5>Fashion Apparel</h5>
-                      <h3>Collections Exclusive To The Z Generation</h3>
-                      <button type="button">Shop Now</button>
-                    </div>
-                    <div class="card-figure col-6">
-                      <img src="./assets/image/card_image_1.png" alt="image" />
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <!-- card-1 -->
-                  <div class="hero-card">
-                    <div class="card-caption col-6">
-                      <h5>Fashion Apparel</h5>
-                      <h3>Collections Exclusive To The Z Generation</h3>
-                      <button type="button">Shop Now</button>
-                    </div>
-                    <div class="card-figure col-6">
-                      <img src="./assets/image/card_image_1.png" alt="image" />
-                    </div>
+                  <div class="card-figure col-6">
+                    <img src="./assets/image/card_image_1.png" alt="image" />
                   </div>
                 </div>
               </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <!-- Card : 1 -->
+              <div class="swiper-slide-hero">
+                <div class="hero-card">
+                  <div class="card-caption col-6">
+                    <h5>Fashion Apparel</h5>
+                    <h3>Collections Exclusive To The Z Generation</h3>
+                    <button type="button">Shop Now</button>
+                  </div>
+                  <div class="card-figure col-6">
+                    <img src="./assets/image/card_image_1.png" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <!-- Card : 1 -->
+              <div class="swiper-slide-hero">
+                <div class="hero-card">
+                  <div class="card-caption col-6">
+                    <h5>Fashion Apparel</h5>
+                    <h3>Collections Exclusive To The Z Generation</h3>
+                    <button type="button">Shop Now</button>
+                  </div>
+                  <div class="card-figure col-6">
+                    <img src="./assets/image/card_image_1.png" alt="image" />
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -117,6 +78,7 @@
             <!-- Swiper -->
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
+                <!-- single card -->
                 <div class="swiper-slide">
                   <div class="single-card">
                     <div>
@@ -128,13 +90,13 @@
                     </div>
                     <div class="single-card-footer">
                       <h6>Jackets</h6>
-                      <div class="single-card-img">
+                      <div class="arrow-container">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-chevron-right"
+                          class="arrow-icon"
                           viewBox="0 0 16 16"
                         >
                           <path
@@ -146,24 +108,25 @@
                     </div>
                   </div>
                 </div>
+                <!-- single card -->
                 <div class="swiper-slide">
                   <div class="single-card">
                     <div>
                       <img
-                        src="./assets/image/jackets.png"
+                        src="./assets/image/hat.png"
                         alt="image"
                         class="single-card-img"
                       />
                     </div>
                     <div class="single-card-footer">
-                      <h6>Jackets</h6>
-                      <div class="single-card-img">
+                      <h6>Hats</h6>
+                      <div class="arrow-container">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-chevron-right"
+                          class="arrow-icon"
                           viewBox="0 0 16 16"
                         >
                           <path
@@ -175,24 +138,25 @@
                     </div>
                   </div>
                 </div>
+                <!-- single card -->
                 <div class="swiper-slide">
                   <div class="single-card">
                     <div>
                       <img
-                        src="./assets/image/jackets.png"
+                        src="./assets/image/hoody.png"
                         alt="image"
                         class="single-card-img"
                       />
                     </div>
                     <div class="single-card-footer">
-                      <h6>Jackets</h6>
-                      <div class="single-card-img">
+                      <h6>Hoodies</h6>
+                      <div class="arrow-container">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-chevron-right"
+                          class="arrow-icon"
                           viewBox="0 0 16 16"
                         >
                           <path
@@ -204,24 +168,25 @@
                     </div>
                   </div>
                 </div>
+                <!-- single card -->
                 <div class="swiper-slide">
                   <div class="single-card">
                     <div>
                       <img
-                        src="./assets/image/jackets.png"
+                        src="./assets/image/sweeter.png"
                         alt="image"
                         class="single-card-img"
                       />
                     </div>
                     <div class="single-card-footer">
-                      <h6>Jackets</h6>
-                      <div class="single-card-img">
+                      <h6>Sweeters</h6>
+                      <div class="arrow-container">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-chevron-right"
+                          class="arrow-icon"
                           viewBox="0 0 16 16"
                         >
                           <path
@@ -233,24 +198,25 @@
                     </div>
                   </div>
                 </div>
+                <!-- single card -->
                 <div class="swiper-slide">
                   <div class="single-card">
                     <div>
                       <img
-                        src="./assets/image/jackets.png"
+                        src="./assets/image/puffer.png"
                         alt="image"
                         class="single-card-img"
                       />
                     </div>
                     <div class="single-card-footer">
-                      <h6>Jackets</h6>
-                      <div class="single-card-img">
+                      <h6>Puffer</h6>
+                      <div class="arrow-container">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-chevron-right"
+                          class="arrow-icon"
                           viewBox="0 0 16 16"
                         >
                           <path
@@ -262,24 +228,25 @@
                     </div>
                   </div>
                 </div>
+                <!-- single card -->
                 <div class="swiper-slide">
                   <div class="single-card">
                     <div>
                       <img
-                        src="./assets/image/jackets.png"
+                        src="./assets/image/short.png"
                         alt="image"
                         class="single-card-img"
                       />
                     </div>
                     <div class="single-card-footer">
-                      <h6>Jackets</h6>
-                      <div class="single-card-img">
+                      <h6>Shorts</h6>
+                      <div class="arrow-container">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-chevron-right"
+                          class="arrow-icon"
                           viewBox="0 0 16 16"
                         >
                           <path
@@ -291,24 +258,25 @@
                     </div>
                   </div>
                 </div>
+                <!-- single card -->
                 <div class="swiper-slide">
                   <div class="single-card">
                     <div>
                       <img
-                        src="./assets/image/jackets.png"
+                        src="./assets/image/shok.png"
                         alt="image"
                         class="single-card-img"
                       />
                     </div>
                     <div class="single-card-footer">
-                      <h6>Jackets</h6>
-                      <div class="single-card-img">
+                      <h6>Socks</h6>
+                      <div class="arrow-container">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-chevron-right"
+                          class="arrow-icon"
                           viewBox="0 0 16 16"
                         >
                           <path
@@ -387,7 +355,7 @@
                   <div class="product-card">
                     <div class="product-card-figure">
                       <img
-                        src="/assets/image/product-puffer-jacket.png"
+                        src="/assets/image/product-heater.png"
                         alt="image"
                         class="product-card-figure"
                       />
@@ -395,26 +363,26 @@
                     <div class="product-option">
                       <div class="option-img">
                         <img
-                          src="/assets/image/product-puffer-jacket_0.png"
+                          src="/assets/image/product-heater_1.png"
                           alt="image"
                         />
                       </div>
                       <div class="option-img">
                         <img
-                          src="/assets/image/product-puffer-jacket_1.png"
+                          src="/assets/image/product-heater.png"
                           alt="image"
                         />
                       </div>
                       <div class="option-img">
                         <img
-                          src="/assets/image/product-puffer-jacket_2.png"
+                          src="/assets/image/product-heater_2.png"
                           alt="image"
                         />
                       </div>
                     </div>
                     <div class="product-card-info">
                       <h5 class="product-card-info-head">
-                        Yellow And Black Puffer jacket
+                        Believe Bold – Heather Blue Edition
                       </h5>
                       <p class="product-card-info-pera">
                         <img src="/assets/icons/Star 1.png" alt="icon" /><span
@@ -422,7 +390,7 @@
                         >
                       </p>
                       <div class="product-card-pricing">
-                        <p class="offer-price">$540</p>
+                        <p class="offer-price">$120</p>
                         <del class="dep-price">$540</del>
                       </div>
                     </div>
@@ -433,7 +401,7 @@
                   <div class="product-card">
                     <div class="product-card-figure">
                       <img
-                        src="/assets/image/product-puffer-jacket.png"
+                        src="/assets/image/product-hoodypng.png"
                         alt="image"
                         class="product-card-figure"
                       />
@@ -441,26 +409,26 @@
                     <div class="product-option">
                       <div class="option-img">
                         <img
-                          src="/assets/image/product-puffer-jacket_0.png"
+                          src="/assets/image/product-hoody_1.png"
                           alt="image"
                         />
                       </div>
                       <div class="option-img">
                         <img
-                          src="/assets/image/product-puffer-jacket_1.png"
+                          src="/assets/image/product-hoodypng.png"
                           alt="image"
                         />
                       </div>
                       <div class="option-img">
                         <img
-                          src="/assets/image/product-puffer-jacket_2.png"
+                          src="/assets/image/product-hoody_2.png"
                           alt="image"
                         />
                       </div>
                     </div>
                     <div class="product-card-info">
                       <h5 class="product-card-info-head">
-                        Yellow And Black Puffer jacket
+                        Yellow hoodie with black sleeves
                       </h5>
                       <p class="product-card-info-pera">
                         <img src="/assets/icons/Star 1.png" alt="icon" /><span
@@ -468,8 +436,8 @@
                         >
                       </p>
                       <div class="product-card-pricing">
-                        <p class="offer-price">$540</p>
-                        <del class="dep-price">$540</del>
+                        <p class="offer-price">$324</p>
+                        <del class="dep-price">$545</del>
                       </div>
                     </div>
                   </div>
@@ -479,7 +447,7 @@
                   <div class="product-card">
                     <div class="product-card-figure">
                       <img
-                        src="/assets/image/product-puffer-jacket.png"
+                        src="/assets/image/product-jeans.png"
                         alt="image"
                         class="product-card-figure"
                       />
@@ -487,26 +455,26 @@
                     <div class="product-option">
                       <div class="option-img">
                         <img
-                          src="/assets/image/product-puffer-jacket_0.png"
+                          src="/assets/image/product-jeans_1.png"
                           alt="image"
                         />
                       </div>
                       <div class="option-img">
                         <img
-                          src="/assets/image/product-puffer-jacket_1.png"
+                          src="/assets/image/product-jeans.png"
                           alt="image"
                         />
                       </div>
                       <div class="option-img">
                         <img
-                          src="/assets/image/product-puffer-jacket_2.png"
+                          src="/assets/image/product-jeans_2.png"
                           alt="image"
                         />
                       </div>
                     </div>
                     <div class="product-card-info">
                       <h5 class="product-card-info-head">
-                        Yellow And Black Puffer jacket
+                        Isolated blue jeans stacked
                       </h5>
                       <p class="product-card-info-pera">
                         <img src="/assets/icons/Star 1.png" alt="icon" /><span
@@ -514,7 +482,7 @@
                         >
                       </p>
                       <div class="product-card-pricing">
-                        <p class="offer-price">$540</p>
+                        <p class="offer-price">$148</p>
                         <del class="dep-price">$540</del>
                       </div>
                     </div>
@@ -565,6 +533,40 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 15" aria-live="polite" aria-label="15"
+                >15</span
+              >
+            </span>
+            days
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 10" aria-live="polite" aria-label="10"
+                >10</span
+              >
+            </span>
+            hours
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 24" aria-live="polite" aria-label="24"
+                >24</span
+              >
+            </span>
+            min
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value: 59" aria-live="polite" aria-label="59"
+                >59</span
+              >
+            </span>
+            sec
           </div>
         </div>
       </section>

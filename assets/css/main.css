@@ -11880,7 +11880,7 @@ main {
 }
 
 .hero-card {
-  max-width: 1120px;
+  width: 1120px;
   height: 604px;
   border-radius: 24px;
   background-color: #e3ab93;
@@ -11931,6 +11931,11 @@ main {
   object-fit: cover;
 }
 
+.swiper-slide-hero {
+  width: 1120px;
+  text-align: center;
+}
+
 .catagory {
   padding: 50px 0;
 }
@@ -11973,22 +11978,27 @@ main {
   font-weight: 500;
   margin-bottom: 0;
 }
-.wrapper .single-card .single-card-footer .single-card-img {
+.wrapper .single-card .single-card-footer .arrow-container {
   width: 32px;
   height: 32px;
   border: 1px solid #e5e7eb;
-  border-radius: 100%;
-  transition: all 300ms ease;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
+  transition: all 0.3s ease;
 }
-.wrapper .single-card .single-card-footer .single-card-img .bi-chevron-right {
+.wrapper .single-card .single-card-footer .arrow-icon {
   color: black;
+  transition: color 0.3s ease;
 }
-.wrapper .single-card .single-card-footer .single-card-img:hover {
+.wrapper .single-card .single-card-footer .arrow-container:hover {
   background-color: #111827;
+  border-color: #111827;
   cursor: pointer;
 }
-.wrapper .single-card .single-card-footer .single-card-img:hover .bi-chevron-right {
+.wrapper .single-card .single-card-footer .arrow-container:hover .arrow-icon {
   color: white;
 }
 
@@ -11997,12 +12007,13 @@ main {
   height: 100%;
 }
 
+.swiper-wrapper {
+  gap: 18px;
+}
+
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 226px !important;
 }
 
 .seller-product-section {
