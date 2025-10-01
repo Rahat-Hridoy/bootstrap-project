@@ -5,17 +5,574 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <main>
       <!-- BANNER SECTION -->
       <section>
+        <div class="container hero">
+          <div class="">
+            <!-- Carosel -->
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <!-- card-1 -->
+                  <div class="hero-card">
+                    <div class="card-caption col-6">
+                      <h5>Fashion Apparel</h5>
+                      <h3>Collections Exclusive To The Z Generation</h3>
+                      <button type="button">Shop Now</button>
+                    </div>
+                    <div class="card-figure col-6">
+                      <img src="./assets/image/card_image_1.png" alt="image" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item active">
+                  <!-- card-1 -->
+                  <div class="hero-card">
+                    <div class="card-caption col-6">
+                      <h5>Fashion Apparel</h5>
+                      <h3>Collections Exclusive To The Z Generation</h3>
+                      <button type="button">Shop Now</button>
+                    </div>
+                    <div class="card-figure col-6">
+                      <img src="./assets/image/card_image_1.png" alt="image" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <!-- card-1 -->
+                  <div class="hero-card">
+                    <div class="card-caption col-6">
+                      <h5>Fashion Apparel</h5>
+                      <h3>Collections Exclusive To The Z Generation</h3>
+                      <button type="button">Shop Now</button>
+                    </div>
+                    <div class="card-figure col-6">
+                      <img src="./assets/image/card_image_1.png" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CATAGORY SECTION -->
+      <section class="catagory" id="catagory">
+        <div class="container mx-auto">
+          <div class="wrapper">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="single-card">
+                    <div>
+                      <img
+                        src="./assets/image/jackets.png"
+                        alt="image"
+                        class="single-card-img"
+                      />
+                    </div>
+                    <div class="single-card-footer">
+                      <h6>Jackets</h6>
+                      <div class="single-card-img">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="single-card">
+                    <div>
+                      <img
+                        src="./assets/image/jackets.png"
+                        alt="image"
+                        class="single-card-img"
+                      />
+                    </div>
+                    <div class="single-card-footer">
+                      <h6>Jackets</h6>
+                      <div class="single-card-img">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="single-card">
+                    <div>
+                      <img
+                        src="./assets/image/jackets.png"
+                        alt="image"
+                        class="single-card-img"
+                      />
+                    </div>
+                    <div class="single-card-footer">
+                      <h6>Jackets</h6>
+                      <div class="single-card-img">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="single-card">
+                    <div>
+                      <img
+                        src="./assets/image/jackets.png"
+                        alt="image"
+                        class="single-card-img"
+                      />
+                    </div>
+                    <div class="single-card-footer">
+                      <h6>Jackets</h6>
+                      <div class="single-card-img">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="single-card">
+                    <div>
+                      <img
+                        src="./assets/image/jackets.png"
+                        alt="image"
+                        class="single-card-img"
+                      />
+                    </div>
+                    <div class="single-card-footer">
+                      <h6>Jackets</h6>
+                      <div class="single-card-img">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="single-card">
+                    <div>
+                      <img
+                        src="./assets/image/jackets.png"
+                        alt="image"
+                        class="single-card-img"
+                      />
+                    </div>
+                    <div class="single-card-footer">
+                      <h6>Jackets</h6>
+                      <div class="single-card-img">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="single-card">
+                    <div>
+                      <img
+                        src="./assets/image/jackets.png"
+                        alt="image"
+                        class="single-card-img"
+                      />
+                    </div>
+                    <div class="single-card-footer">
+                      <h6>Jackets</h6>
+                      <div class="single-card-img">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sellers-Products -->
+      <section class="seller-product-section">
         <div class="container">
-          <h1>Hello</h1>
+          <div class="row">
+            <div class="col-12">
+              <h2 class="product-head">Best Sellers Products</h2>
+            </div>
+            <!-- Product-Cards -->
+            <div>
+              <div class="product-card-wrapper">
+                <!-- card-1 -->
+                <div class="">
+                  <div class="product-card">
+                    <div class="product-card-figure">
+                      <img
+                        src="/assets/image/product-puffer-jacket.png"
+                        alt="image"
+                        class="product-card-figure"
+                      />
+                    </div>
+                    <div class="product-option">
+                      <div class="option-img">
+                        <img
+                          src="/assets/image/product-puffer-jacket_0.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="option-img">
+                        <img
+                          src="/assets/image/product-puffer-jacket_1.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="option-img">
+                        <img
+                          src="/assets/image/product-puffer-jacket_2.png"
+                          alt="image"
+                        />
+                      </div>
+                    </div>
+                    <div class="product-card-info">
+                      <h5 class="product-card-info-head">
+                        Yellow And Black Puffer jacket
+                      </h5>
+                      <p class="product-card-info-pera">
+                        <img src="/assets/icons/Star 1.png" alt="icon" /><span
+                          >4.9 (53 Reviews)</span
+                        >
+                      </p>
+                      <div class="product-card-pricing">
+                        <p class="offer-price">$540</p>
+                        <del class="dep-price">$540</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card-2 -->
+                <div class="">
+                  <div class="product-card">
+                    <div class="product-card-figure">
+                      <img
+                        src="/assets/image/product-puffer-jacket.png"
+                        alt="image"
+                        class="product-card-figure"
+                      />
+                    </div>
+                    <div class="product-option">
+                      <div class="option-img">
+                        <img
+                          src="/assets/image/product-puffer-jacket_0.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="option-img">
+                        <img
+                          src="/assets/image/product-puffer-jacket_1.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="option-img">
+                        <img
+                          src="/assets/image/product-puffer-jacket_2.png"
+                          alt="image"
+                        />
+                      </div>
+                    </div>
+                    <div class="product-card-info">
+                      <h5 class="product-card-info-head">
+                        Yellow And Black Puffer jacket
+                      </h5>
+                      <p class="product-card-info-pera">
+                        <img src="/assets/icons/Star 1.png" alt="icon" /><span
+                          >4.9 (53 Reviews)</span
+                        >
+                      </p>
+                      <div class="product-card-pricing">
+                        <p class="offer-price">$540</p>
+                        <del class="dep-price">$540</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card-3 -->
+                <div class="">
+                  <div class="product-card">
+                    <div class="product-card-figure">
+                      <img
+                        src="/assets/image/product-puffer-jacket.png"
+                        alt="image"
+                        class="product-card-figure"
+                      />
+                    </div>
+                    <div class="product-option">
+                      <div class="option-img">
+                        <img
+                          src="/assets/image/product-puffer-jacket_0.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="option-img">
+                        <img
+                          src="/assets/image/product-puffer-jacket_1.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="option-img">
+                        <img
+                          src="/assets/image/product-puffer-jacket_2.png"
+                          alt="image"
+                        />
+                      </div>
+                    </div>
+                    <div class="product-card-info">
+                      <h5 class="product-card-info-head">
+                        Yellow And Black Puffer jacket
+                      </h5>
+                      <p class="product-card-info-pera">
+                        <img src="/assets/icons/Star 1.png" alt="icon" /><span
+                          >4.9 (53 Reviews)</span
+                        >
+                      </p>
+                      <div class="product-card-pricing">
+                        <p class="offer-price">$540</p>
+                        <del class="dep-price">$540</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card-4 -->
+                <div class="">
+                  <div class="product-card">
+                    <div class="product-card-figure">
+                      <img
+                        src="/assets/image/product-puffer-jacket.png"
+                        alt="image"
+                        class="product-card-figure"
+                      />
+                    </div>
+                    <div class="product-option">
+                      <div class="option-img">
+                        <img
+                          src="/assets/image/product-puffer-jacket_0.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="option-img">
+                        <img
+                          src="/assets/image/product-puffer-jacket_1.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="option-img">
+                        <img
+                          src="/assets/image/product-puffer-jacket_2.png"
+                          alt="image"
+                        />
+                      </div>
+                    </div>
+                    <div class="product-card-info">
+                      <h5 class="product-card-info-head">
+                        Yellow And Black Puffer jacket
+                      </h5>
+                      <p class="product-card-info-pera">
+                        <img src="/assets/icons/Star 1.png" alt="icon" /><span
+                          >4.9 (53 Reviews)</span
+                        >
+                      </p>
+                      <div class="product-card-pricing">
+                        <p class="offer-price">$540</p>
+                        <del class="dep-price">$540</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Best-seller -->
+      <section>
+        <div class="container">
+          <div class="best-seller">
+            <div>
+              <div class="best-seller-caption">
+                <h6 class="best-seller-subtitle">SHOP BEFORE IT ENDS</h6>
+                <h2>Save 10% on Bestsellers</h2>
+                <button>Shop the deals</button>
+              </div>
+            </div>
+            <div>
+              <div class="seller-counter">
+                <div>
+                  <h2 class="seller-counter-h2">27</h2>
+                  <p class="seller-counter-p">DAYS</p>
+                </div>
+                <div>
+                  <h2 class="seller-counter-h2">:</h2>
+                </div>
+                <div>
+                  <h2 class="seller-counter-h2">17</h2>
+                  <p class="seller-counter-p">HOURS</p>
+                </div>
+                <div>
+                  <h2 class="seller-counter-h2">:</h2>
+                </div>
+                <div>
+                  <h2 class="seller-counter-h2">12</h2>
+                  <p class="seller-counter-p">MINUTES</p>
+                </div>
+                <div>
+                  <h2 class="seller-counter-h2">:</h2>
+                </div>
+                <div>
+                  <h2 class="seller-counter-h2">40</h2>
+                  <p class="seller-counter-p">SECONDS</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

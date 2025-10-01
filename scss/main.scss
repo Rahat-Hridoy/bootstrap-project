@@ -1,1 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+$font-family-sans-serif: "Instrument Sans", sans-serif;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+$container-max-widths: (
+  sm: 540px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1400px,
+  xxl: 1720px,
+) !default;
+
+main {
+  margin: 50px 0;
+}
+
+.container {
+  max-width: 1720px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//  HERO SECTION
+.hero {
+  padding: 50px 0;
+  margin: auto;
+}
+
+.hero-card {
+  max-width: 1120px;
+  height: 604px;
+  border-radius: 24px;
+  background-color: #e3ab93;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto 20px;
+  .card-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 417px;
+  }
+  .card-caption h5 {
+    color: #451a03;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .card-caption h3 {
+    color: #451a03;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 62px;
+    text-align: center;
+  }
+  .card-caption button {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #451a03;
+    padding: 12px 42px;
+    border-radius: 50px;
+    margin-top: 50px;
+    border: none;
+  }
+  .card-caption button:hover {
+    cursor: pointer;
+    background-color: #2c1102d5;
+  }
+  .card-figure img {
+    width: 515px;
+    height: auto;
+    object-fit: cover;
+  }
+}
+// Section : Catagory
+.catagory {
+  padding: 50px 0;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .single-card {
+    width: 226px;
+    height: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    .single-card-img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      padding: 18px;
+      background-color: #fffbeb;
+      border-radius: 100%;
+    }
+    .single-card-footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 28px;
+      h6 {
+        color: #2e2e38;
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      .single-card-img {
+        width: 32px;
+        height: 32px;
+        border: 1px solid #e5e7eb;
+        border-radius: 100%;
+        transition: all 300ms ease;
+        background-color: transparent;
+        .bi-chevron-right {
+          color: black;
+        }
+        &:hover {
+          background-color: #111827;
+          cursor: pointer;
+          .bi-chevron-right {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+// Swipper
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Section: Seller-product
+.seller-product-section {
+  padding: 60px 0;
+
+  .product-head {
+    color: #000000;
+    font-size: 60px;
+    font-weight: 500px;
+    line-height: 78px;
+    padding-bottom: 40px;
+  }
+  // product-cards
+  .product-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    .product-card {
+      width: 412px;
+      height: auto;
+      background-color: #f3f4f6;
+      border-radius: 24px;
+      padding: 20px;
+      .product-card-figure {
+        width: 100%;
+        height: 263px;
+        object-fit: cover;
+      }
+      .product-option {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        .option-img img {
+          width: 44px;
+          height: 44px;
+          object-fit: cover;
+          padding: 5px;
+          background-color: white;
+          border-radius: 6px;
+          border: 1px solid transparent;
+          cursor: pointer;
+        }
+        .option-img img:hover {
+          border: 1px solid #d97706;
+        }
+      }
+      .product-card-info {
+        padding-top: 24px;
+        .product-card-info-head {
+          color: #111827;
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 600;
+        }
+        .product-card-info-pera {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          gap: 4px;
+          color: #4b5563;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .product-card-pricing {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 8px;
+        .offer-price {
+          color: #111827;
+          font-size: 24px;
+          line-height: 34px;
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+        .dep-price {
+          color: #9ca3af;
+          font-size: 24px;
+          line-height: 34px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+// Best seller
+.best-seller {
+  background-color: #ead2ca;
+  border-radius: 24px;
+  padding: 90px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.best-seller-caption h6 {
+  color: #1f2937;
+  font-size: 24px;
+  line-height: 34px;
+}
+.best-seller-caption h2 {
+  color: #0f172a;
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.best-seller-caption button {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 12px 20px;
+  background-color: #111827;
+  border-radius: 50px;
+  border: none;
+}
+
+.seller-counter {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  gap: 20px;
+  margin: auto;
+}
+
+.seller-counter-h2 {
+  color: #0f172a;
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 600;
+}
+.seller-counter-p {
+  color: #1f2937;
+  font-size: 18px;
+  line-height: 25px;
+}
